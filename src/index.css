@@ -5,9 +5,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #a70000, #abcc1a, #23a6d5, #470211);
+	background-size: 400% 400%;
+	height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	75% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.buttonMP{
+  margin: 10px;
+  padding: 10px;
+}
+
+.centre{
+  text-align: center;
+}
+
+.btn-1 {
+  background: #ffd104;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #f04e03;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px;
+  position: relative;
+}
+
+.card.reverse {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
 }
